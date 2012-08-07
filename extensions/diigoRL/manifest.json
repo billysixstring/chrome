@@ -1,0 +1,18 @@
+{
+	"name": "Diigo Read-Later Checker",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "Keep up with the Diigo Read-Later folder",
+	"icons": { "16" : "images/readlater.png",
+               "48" : "images/48.png",
+               "128" : "images/128.png"},
+	"homepage_url": "http://www.diigo.com",
+	"background": { "page": "background.html" },
+	"permissions": [ "https://secure.diigo.com/api/*" ],
+	"browser_action": {
+				"default_icon": "images/readlater.png",
+				"default_title": "Diigo Read-Later Checker",
+				"default_popup": "popup.html"
+	},
+	"options_page": "options.html"
+}
