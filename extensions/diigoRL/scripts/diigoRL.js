@@ -61,5 +61,5 @@ function onRequest(request, sender, callback) {
 // Wire up the listener.
 chrome.extension.onRequest.addListener(onRequest);
 document.addEventListener( 'DOMContentLoaded', function () {
-  fetch_feed( 'https://secure.diigo.com/api/v2/bookmarks?user=billysixstring&tags=read.later&count=100', displayCount );
+  fetch_feed( 'https://secure.diigo.com/api/v2/bookmarks?key=dc04dd4cd959c7a1&user=billysixstring&tags=read.later&count=100', displayCount );
 });

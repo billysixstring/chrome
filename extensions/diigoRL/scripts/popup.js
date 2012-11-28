@@ -1,5 +1,5 @@
 function fetch_feed() {
-	chrome.extension.sendRequest({'action' : 'fetch_feed', 'url' : 'https://secure.diigo.com/api/v2/bookmarks?user=billysixstring&tags=read.later&count=100'}, 
+	chrome.extension.sendRequest({'action' : 'fetch_feed', 'url' : 'https://secure.diigo.com/api/v2/bookmarks?key=dc04dd4cd959c7a1&user=billysixstring&tags=read.later&count=100'}, 
 		function(response) {
 			display_stories(response);
 		}
